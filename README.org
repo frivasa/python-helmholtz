@@ -11,5 +11,23 @@ and then add this directory to your python path
 #+BEGIN_EXAMPLE
 export $PYTHONPATH=/path/to/module:$PYTHONPATH
 #+END_EXAMPLE
+** Crash course
+show sample output (with tag names)
+#+BEGIN_EXAMPLE
+make test
+#+END_EXAMPLE
+then pat your way into the module via a minimal example to compare
+#+BEGIN_EXAMPLE
+import fhelmholtz
+xmass = [0.75e0, 0.23e0, 0.02e0]
+aion = [1.0e0, 4.0e0, 12.0e0]
+zion = [1.0e0, 2.0e0, 6.0e0]
+abar = 1.0e0/sum([x/a for (x,a) in zip(xmass, aion)])
+zbar = abar * sum([x*z/a for (z,x,a) in zip(zion, xmass, aion)])
+res = helmholtz.helmeos([ 1.0e8 ], [ 1.0e6 ], [ abar ], [ zbar ])
+for k, v in res.__dict__.items():
+    print k,v
+#+END_EXAMPLE
+
 ** Author
 Josiah Schwab <jschwab at gmail dot com>

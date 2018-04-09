@@ -1,5 +1,5 @@
 FC=gfortran
-HELM_TABLE_DIR=$(shell pwd)
+HELM_TABLE_DIR=${PWD}
 HELM_TABLE_NAME=helm_table.dat
 
 all: module

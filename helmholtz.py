@@ -1,4 +1,4 @@
-from . import fhelmholtz
+import fhelmholtz
 import numpy as np
 
 # list of common blocks that hold interesting information
