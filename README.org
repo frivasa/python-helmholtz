@@ -1,9 +1,7 @@
-* python-helmholtz
+* python-helmholtz-p2
 Python bindings for [[http://cococubed.asu.edu/code_pages/eos.shtml][Frank Timmes' Helmholtz EoS]].
 ** Prerequisites
-You must have numpy and a fortran compiler installed.  This is only
-tested on python3, though in principle one should be able to
-relatively easily adapt it to python2.
+You must have numpy and a fortran compiler installed.  This is a forked version for python 2.X.
 ** Installation
 Simply type
 #+BEGIN_EXAMPLE
